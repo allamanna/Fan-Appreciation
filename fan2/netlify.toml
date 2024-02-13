@@ -1,7 +1,7 @@
 [build]
   command = "npm run build"
-  functions = "functions"
-  publish = "dist" # Adjust this to match the output directory of your build script
+  functions = "netlify/functions"
+  publish = "dist"
 
 [[redirects]]
   from = "/*"
