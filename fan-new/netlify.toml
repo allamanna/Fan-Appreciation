@@ -1,2 +1,9 @@
 [build]
-functions = "functions"
+  command = "npm run build"  # Adjust this based on your build command
+  functions = "functions"    # Directory where your serverless functions are located
+  publish = "public"         # Directory to publish (where your static files are)
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
