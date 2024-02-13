@@ -1,5 +1,3 @@
-// functions/enterContest.js
-
 exports.handler = async function (event, context) {
     try {
         const { name, email } = JSON.parse(event.body);
@@ -10,21 +8,17 @@ exports.handler = async function (event, context) {
         // Save entry
         const entry = { name: name, email: email, isWinner };
 
-        // You can store entries in a database or another persistent storage
-        // In this example, entries are not stored permanently, and will be lost between function executions
-
         // Respond with the result
-        if (isWinner) {
-            return {
-                statusCode: 200,
-                body: JSON.stringify({ message: 'Congratulations! You\'re a winner!', entry }),
-            };
-        } else {
-            return {
-                statusCode: 200,
-                body: JSON.stringify({ message: 'Sorry, you didn\'t win this time. Try again!', entry }),
-            };
-        }
+        const response = {
+            statusCode: 200,
+            headers: {
+                'Access-Control-Allow-Origin': '*', // Adjust this header based on your CORS needs
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(isWinner ? { message: 'Congratulations! You\'re a winner!', entry } : { message: 'Sorry, you didn\'t win this time. Try again!', entry }),
+        };
+
+        return response;
     } catch (error) {
         console.error('Error:', error);
         return {
