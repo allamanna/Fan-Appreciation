@@ -1,7 +1,7 @@
 [build]
-  command = "npm run build"  # Adjust this based on your build command
-  functions = "functions"    # Directory where your serverless functions are located
-  publish = "public"         # Directory to publish (where your static files are)
+  command = "npm run build"
+  functions = "functions"
+  publish = "dist" # Adjust this to match the output directory of your build script
 
 [[redirects]]
   from = "/*"
