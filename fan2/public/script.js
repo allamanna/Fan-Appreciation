@@ -1,4 +1,4 @@
-const apiUrl = '/netlify/functions/enterContest';
+const apiUrl = '/.netlify/functions/enterContest';
 
 function enterContest() {
     const name = document.getElementById('name').value;
