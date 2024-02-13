@@ -4,7 +4,7 @@
   "description": "fan appreciation start",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js", // Assuming your main server file is app.js
+    "start": "node app.js",
     "build": "parcel build public/index.html --out-dir dist"
   },
   "keywords": [
