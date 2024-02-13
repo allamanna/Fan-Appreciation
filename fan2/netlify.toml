@@ -13,4 +13,4 @@
     [headers.values]
     Access-Control-Allow-Origin = "*"
     X-Frame-Options = "DENY"
-    # Add more headers as needed
+# Add more headers as needed
