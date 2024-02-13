@@ -1,2 +1,26 @@
+plugins = []
+headers = []
+redirects = []
+
+[functions]
+
+[functions."*"]
+
 [build]
-  publish = "public"
+publish = "/Users/alamanna/Downloads/FAN/fan-new/public"
+publishOrigin = "config"
+commandOrigin = "heuristics"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
