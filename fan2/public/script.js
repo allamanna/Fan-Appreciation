@@ -1,4 +1,4 @@
-const apiUrl = '/.netlify/functions/enterContest';
+const apiUrl = 'https://fan-appreciation.netlify.app/';
 
 function enterContest() {
     const name = document.getElementById('name').value;
@@ -20,4 +20,3 @@ function enterContest() {
         displayResult('An error occurred. Please try again.');
     });
 }
-
