@@ -1,7 +1,9 @@
 [build]
+[build]
+  base = "fan2"
   command = "npm run build"
-  functions = "netlify/functions"
-  publish = "dist"
+  publish = "fan2/dist"
+  functions = "fan2/netlify/functions"
 
 [[redirects]]
   from = "/*"
