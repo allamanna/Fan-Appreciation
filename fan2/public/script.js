@@ -1,4 +1,4 @@
-const apiUrl = 'https://fan-appreciation.netlify.app/';
+const apiUrl = 'https://fan-appreciation.netlify.app/.netlify/functions/enterContest';
 
 function enterContest() {
     const name = document.getElementById('name').value;
